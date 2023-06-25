@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './navbar.component.html',
   styles: [],
 })
-export class NavbarComponent {}
+export class NavbarComponent {
+  public isResponsiveNav: boolean = false;
+}

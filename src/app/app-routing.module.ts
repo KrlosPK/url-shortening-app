@@ -6,6 +6,10 @@ import { HomePageComponent } from './url-shortener/pages/home-page/home-page.com
 
 const routes: Routes = [
   { path: '', component: HomePageComponent },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+  },
   { path: '404', component: Error404PageComponent },
   { path: '**', redirectTo: '404' },
 ];
