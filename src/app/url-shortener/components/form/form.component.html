@@ -1,0 +1,27 @@
+<section class="p-4 sm:px-11 mt-10">
+  <form
+    class="rounded-xl px-8 py-10 flex flex-col sm:flex-row bg-shorten-mobile bg-indigo-500 bg-no-repeat bg-contain md:bg-shorten-desktop md:bg-cover bg-right sm:items-center"
+    [formGroup]="shortenerForm"
+    (ngSubmit)="onShortenUrl()"
+  >
+    <div class="relative mr-4 w-full">
+      <input
+        [ngStyle]="{ borderColor: isFormInvalid }"
+        type="text"
+        formControlName="url"
+        required
+        class="rounded-lg border-2 px-6 py-[6px] w-full placeholder:text-indigo-600 box-border"
+        placeholder="Shorten a link here..."
+      />
+      <span
+        *ngIf="onInvalidForm()"
+        class="mt-1 absolute left-0 top-full text-red-500 font-bold italic"
+        >Please add a link</span
+      >
+    </div>
+    <shared-button
+      text="Shorten it!"
+      radius="rounded-lg w-full mt-10 sm:mt-0"
+    />
+  </form>
+</section>
