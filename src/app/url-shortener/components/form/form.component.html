@@ -6,15 +6,15 @@
   >
     <div class="relative mr-4 w-full">
       <input
-        [ngStyle]="{ borderColor: isFormInvalid }"
+        [ngStyle]="isValidField('url') ? { borderColor: 'red' } : null"
         type="text"
         formControlName="url"
         required
-        class="rounded-lg border-2 px-6 py-[6px] w-full placeholder:text-indigo-600 box-border"
+        class="rounded-lg border-2 px-6 py-[6px] w-full placeholder:text-indigo-600 box-border focus:outline-none"
         placeholder="Shorten a link here..."
       />
       <span
-        *ngIf="onInvalidForm()"
+        *ngIf="isValidField('url')"
         class="mt-1 absolute left-0 top-full text-red-500 font-bold italic"
         >Please add a link</span
       >

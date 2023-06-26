@@ -10,20 +10,14 @@ export class FormComponent {
   public shortenerForm: FormGroup = this.fb.group({
     url: ['', Validators.required],
   });
-  public isFormInvalid: string = '';
 
   constructor(private fb: FormBuilder) {}
 
-  onInvalidForm(): boolean {
-    if (this.shortenerForm.touched) {
-      setTimeout(() => {
-        this.isFormInvalid = 'red';
-      }, 0);
-
-      return this.shortenerForm.invalid;
-    }
-    this.isFormInvalid = 'transparent';
-    return false;
+  isValidField(field: string): boolean | null {
+    return (
+      this.shortenerForm.controls[field].errors &&
+      this.shortenerForm.controls[field].touched
+    );
   }
 
   onShortenUrl(): void {
@@ -33,5 +27,7 @@ export class FormComponent {
     }
 
     console.log(this.shortenerForm.value);
+
+    this.shortenerForm.reset();
   }
 }
