@@ -8,6 +8,8 @@ import { FormComponent } from './components/form/form.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ShortenedUrlComponent } from './components/shortened-url/shortened-url.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
+import { MoreInfoComponent } from './components/more-info/more-info.component';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
     HomePageComponent,
     ShortenedUrlComponent,
     WelcomeComponent,
+    MoreInfoComponent,
+    CardComponent,
   ],
   imports: [CommonModule, ReactiveFormsModule, SharedModule],
 })

@@ -10,6 +10,6 @@ export class HomePageComponent {
   public shortenUrls: Url[] = [];
 
   onShortenUrl(event: Url): void {
-    this.shortenUrls.push(event);
+    this.shortenUrls.unshift(event);
   }
 }

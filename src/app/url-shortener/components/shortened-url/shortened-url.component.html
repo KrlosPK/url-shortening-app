@@ -4,7 +4,7 @@
     *ngFor="let userUrl of userUrls; let i = index"
   >
     <p
-      class="overflow-hidden font-semibold text-indigo-700 select-all text-ellipsis md:max-w-xs"
+      class="overflow-hidden font-semibold text-indigo-700 select-all text-ellipsis md:max-w-sm whitespace-nowrap"
     >
       {{ userUrl.url }}
     </p>
@@ -30,4 +30,6 @@
       />
     </button>
   </article>
+
+  <url-shortener-more-info />
 </section>

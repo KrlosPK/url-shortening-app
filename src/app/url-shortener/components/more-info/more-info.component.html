@@ -1,0 +1,22 @@
+<article>
+  <h2 class="mb-4 text-4xl font-bold text-center text-indigo-950">
+    Advanced Statistics
+  </h2>
+  <p class="max-w-sm mx-auto font-semibold text-center text-gray-600">
+    Trach how your links are performing across the web with our advanced
+    statistics dashboard
+  </p>
+</article>
+
+<section
+  class="relative grid max-w-5xl grid-cols-1 gap-16 mx-auto mt-20 lg:grid-cols-3 place-items-center lg:mt-28 lg:mb-10 h-fit"
+>
+  <span class="absolute w-2 bg-blue-400 h-3/4 lg:w-full lg:h-2"></span>
+  <url-shortener-card
+    *ngFor="let card of cards"
+    [src]="card.src"
+    [alt]="card.alt"
+    [title]="card.title"
+    [text]="card.text"
+  />
+</section>

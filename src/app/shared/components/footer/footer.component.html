@@ -1,1 +1,87 @@
-<p>footer works!</p>
+<footer>
+  <article
+    class="flex flex-col items-center justify-center gap-6 py-10 bg-indigo-500 bg-right bg-no-repeat lg:bg-cover bg-boost-mobile md:bg-boost-desktop"
+  >
+    <h2 class="text-2xl font-bold text-white">Boost your links today</h2>
+    <shared-button
+      text="Get Started"
+      styles="md:scale-125 md:translate-x-4 md:mb-2"
+    />
+  </article>
+
+  <ul
+    class="grid justify-center grid-cols-1 gap-6 py-10 text-white place-items-center lg:grid-cols-5 bg-indigo-950"
+  >
+    <li>
+      <a routerLink="/"
+        ><img
+          width="121"
+          height="33"
+          src="./assets/images/white-logo.svg"
+          alt="Url Shortening Logotype"
+      /></a>
+    </li>
+
+    <ul>
+      <shared-navitem text="Features" styles="font-bold text-center" />
+      <shared-navitem text="Link Shortening" styles="text-center" />
+      <shared-navitem text="Branded Links" styles="text-center" />
+    </ul>
+
+    <ul>
+      <shared-navitem text="Resources" styles="font-bold text-center" />
+      <shared-navitem text="Blog" styles="text-center" />
+      <shared-navitem text="Developers" styles="text-center" />
+      <shared-navitem text="Support" styles="text-center" />
+    </ul>
+
+    <ul>
+      <shared-navitem text="Company" styles="font-bold text-center" />
+      <shared-navitem text="About" styles="text-center" />
+      <shared-navitem text="Our Team" styles="text-center" />
+      <shared-navitem text="Careers" styles="text-center" />
+      <shared-navitem text="Contact" styles="text-center" />
+    </ul>
+
+    <ul class="flex items-center justify-center gap-4">
+      <a
+        class="hover:scale-110"
+        href="https://www.facebook.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="./assets/images/icon-facebook.svg" alt="Ícono de Facebook" />
+      </a>
+      <a
+        class="hover:scale-110"
+        href="https://twitter.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="./assets/images/icon-twitter.svg" alt="Ícono de Twitter" />
+      </a>
+      <a
+        class="hover:scale-110"
+        href="https://co.pinterest.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="./assets/images/icon-pinterest.svg"
+          alt="Ícono de Pinterest"
+        />
+      </a>
+      <a
+        class="hover:scale-110"
+        href="https://www.instagram.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img
+          src="./assets/images/icon-instagram.svg"
+          alt="Ícono de Instagram"
+        />
+      </a>
+    </ul>
+  </ul>
+</footer>

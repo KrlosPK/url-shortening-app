@@ -13,5 +13,7 @@ export class NavitemComponent {
   @Input()
   public textColor: string = 'text-white';
   @Input()
-  public textColorHover: string = 'text-white';
+  public textColorHover: string = 'text-white hover:underline';
+  @Input()
+  public styles: string = '';
 }
