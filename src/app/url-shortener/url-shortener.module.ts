@@ -4,12 +4,18 @@ import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from '../shared/shared.module';
 
-import { HomePageComponent } from './pages/home-page/home-page.component';
-import { WelcomeComponent } from './components/welcome/welcome.component';
 import { FormComponent } from './components/form/form.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
+import { ShortenedUrlComponent } from './components/shortened-url/shortened-url.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 
 @NgModule({
-  declarations: [HomePageComponent, WelcomeComponent, FormComponent],
+  declarations: [
+    FormComponent,
+    HomePageComponent,
+    ShortenedUrlComponent,
+    WelcomeComponent,
+  ],
   imports: [CommonModule, ReactiveFormsModule, SharedModule],
 })
 export class UrlShortenerModule {}

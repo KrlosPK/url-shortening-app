@@ -1,5 +1,7 @@
 <main>
   <url-shortener-welcome />
 
-  <url-shortener-form />
+  <url-shortener-form (shortenUrl)="onShortenUrl($event)" />
+
+  <url-shortener-shortened-url [userUrls]="shortenUrls" />
 </main>

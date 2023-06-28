@@ -1,22 +1,23 @@
-<section class="p-4 sm:px-11 mt-10">
+<section class="p-4 mt-10 sm:px-11">
   <form
-    class="rounded-xl px-8 py-10 flex flex-col sm:flex-row bg-shorten-mobile bg-indigo-500 bg-no-repeat bg-contain md:bg-shorten-desktop md:bg-cover bg-right sm:items-center"
+    class="flex flex-col px-8 py-10 bg-indigo-500 bg-right bg-no-repeat bg-contain rounded-xl sm:flex-row bg-shorten-mobile md:bg-shorten-desktop md:bg-cover sm:items-center"
     [formGroup]="shortenerForm"
     (ngSubmit)="onShortenUrl()"
   >
-    <div class="relative mr-4 w-full">
+    <div class="relative w-full mr-4">
       <input
         [ngStyle]="isValidField('url') ? { borderColor: 'red' } : null"
         type="text"
         formControlName="url"
         required
+        #urlInputRef
         class="rounded-lg border-2 px-6 py-[6px] w-full placeholder:text-indigo-600 box-border focus:outline-none"
         placeholder="Shorten a link here..."
       />
       <span
         *ngIf="isValidField('url')"
-        class="mt-1 absolute left-0 top-full text-red-500 font-bold italic"
-        >Please add a link</span
+        class="absolute left-0 mt-1 italic font-bold text-red-500 top-full"
+        >{{ getFieldError("url") }}</span
       >
     </div>
     <shared-button
