@@ -4,16 +4,17 @@
   >
     <h2 class="text-2xl font-bold text-white">Boost your links today</h2>
     <shared-button
+      goTo="#shortenUrl"
       styles="md:scale-125 md:translate-x-4 md:mb-2"
       text="Get Started"
     />
   </article>
 
-  <ul class="text-white bg-indigo-950">
+  <article class="text-white bg-indigo-950">
     <div
       class="grid justify-center grid-cols-1 gap-6 py-10 mx-auto max-w-7xl place-items-center lg:grid-cols-5 lg:items-start"
     >
-      <li class="lg:pt-2">
+      <div class="lg:pt-2">
         <a routerLink="/"
           ><img
             alt="Url Shortening Logotype"
@@ -21,83 +22,127 @@
             src="./assets/images/white-logo.svg"
             width="121"
         /></a>
-      </li>
+      </div>
 
       <ul>
-        <shared-navitem text="Features" styles="font-bold text-center pt-0" />
-        <shared-navitem text="Link Shortening" styles="text-center" />
-        <shared-navitem text="Branded Links" styles="text-center" />
+        <li>
+          <shared-navitem text="Features" styles="font-bold text-center pt-0" />
+        </li>
+
+        <li>
+          <shared-navitem text="Link Shortening" styles="text-center" />
+        </li>
+
+        <li>
+          <shared-navitem text="Branded Links" styles="text-center" />
+        </li>
       </ul>
 
       <ul>
-        <shared-navitem text="Resources" styles="font-bold text-center pt-0" />
-        <shared-navitem text="Blog" styles="text-center" />
-        <shared-navitem text="Developers" styles="text-center" />
-        <shared-navitem text="Support" styles="text-center" />
+        <li>
+          <shared-navitem
+            styles="font-bold text-center pt-0"
+            text="Resources"
+          />
+        </li>
+
+        <li>
+          <shared-navitem text="Blog" styles="text-center" />
+        </li>
+
+        <li>
+          <shared-navitem text="Developers" styles="text-center" />
+        </li>
+
+        <li>
+          <shared-navitem text="Support" styles="text-center" />
+        </li>
       </ul>
 
       <ul>
-        <shared-navitem text="Company" styles="font-bold text-center pt-0" />
-        <shared-navitem text="About" styles="text-center" />
-        <shared-navitem text="Our Team" styles="text-center" />
-        <shared-navitem text="Careers" styles="text-center" />
-        <shared-navitem text="Contact" styles="text-center" />
+        <li>
+          <shared-navitem text="Company" styles="font-bold text-center pt-0" />
+        </li>
+
+        <li>
+          <shared-navitem text="About" styles="text-center" />
+        </li>
+
+        <li>
+          <shared-navitem text="Our Team" styles="text-center" />
+        </li>
+
+        <li>
+          <shared-navitem text="Careers" styles="text-center" />
+        </li>
+
+        <li>
+          <shared-navitem text="Contact" styles="text-center" />
+        </li>
       </ul>
 
       <ul class="flex items-center justify-center gap-4 lg:pt-2">
-        <a
-          class="hover:scale-110"
-          href="https://www.facebook.com"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Ícono de Facebook"
-            height="24"
-            src="./assets/images/icon-facebook.svg"
-            width="24"
-          />
-        </a>
-        <a
-          class="hover:scale-110"
-          href="https://twitter.com"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Ícono de Twitter"
-            height="24"
-            src="./assets/images/icon-twitter.svg"
-            width="24"
-          />
-        </a>
-        <a
-          class="hover:scale-110"
-          href="https://co.pinterest.com"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Ícono de Pinterest"
-            height="24"
-            src="./assets/images/icon-pinterest.svg"
-            width="24"
-          />
-        </a>
-        <a
-          class="hover:scale-110"
-          href="https://www.instagram.com"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <img
-            alt="Ícono de Instagram"
-            height="24"
-            src="./assets/images/icon-instagram.svg"
-            width="24"
-          />
-        </a>
+        <li>
+          <a
+            class="hover:scale-110"
+            href="https://www.facebook.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Ícono de Facebook"
+              height="24"
+              src="./assets/images/icon-facebook.svg"
+              width="24"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="hover:scale-110"
+            href="https://twitter.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Ícono de Twitter"
+              height="24"
+              src="./assets/images/icon-twitter.svg"
+              width="24"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="hover:scale-110"
+            href="https://co.pinterest.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Ícono de Pinterest"
+              height="24"
+              src="./assets/images/icon-pinterest.svg"
+              width="24"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            class="hover:scale-110"
+            href="https://www.instagram.com"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Ícono de Instagram"
+              height="24"
+              src="./assets/images/icon-instagram.svg"
+              width="24"
+            />
+          </a>
+        </li>
       </ul>
     </div>
-  </ul>
+  </article>
 </footer>

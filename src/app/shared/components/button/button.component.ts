@@ -12,4 +12,6 @@ export class ButtonComponent {
   public text: string = '';
   @Input()
   public radius: string = 'rounded-full';
+  @Input()
+  public goTo: string = '';
 }
